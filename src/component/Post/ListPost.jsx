@@ -167,7 +167,7 @@ const ListPost = () => {
                                     <img src={`${selected.imageProducts[0].urlImage}`} alt="Hình ảnh bài đăng"/>
                                     <div>
                                             {/* <Link to={`/post/${selected.postId}`}> */}
-                                                <h3 onClick={() => handleClick(`/post/${selected.postId}`)} className='mb-2'>{selected.title}</h3>
+                                                <h3 onClick={() => handleClick(`/post/${selected._id}`)} className='mb-2'>{selected.title}</h3>
                                             {/* </Link> */}
                                             
                                             <span className="card-area lead mb-2">

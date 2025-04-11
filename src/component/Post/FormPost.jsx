@@ -79,8 +79,8 @@ const FormPost = (props) => {
     
 
     const loadRoomType = async () =>{
-        const data = await getRoomType()
-       setListRoomType(data)
+        const data = await getRoomType(1,false)
+       setListRoomType(data.content)
     }
 
     const handleSubmit = async (event) => {

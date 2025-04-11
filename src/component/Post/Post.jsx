@@ -65,7 +65,7 @@ const Post = (props) => {
                 <Link to={`/post/${props.postId}`}>
                         <img
                             src={`${props.filteredAnh[0].urlImage}`}
-                            className={`w-100 img-fluid ${props.postCategory.postCategoryId !== 2 ? 'img-large' : 'img-small'}`}
+                            className={`w-100 img-fluid ${props.postCategory.categoryName !== 'Tin nổi bật' ? 'img-large' : 'img-small'}`}
                             alt="Hình ảnh bài đăng"
                         />
                         {props.postCategory.categoryName === 'Tin nổi bật' && (
